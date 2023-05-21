@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="icon" type="image/png" href="/logo.6fa4659b.png">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Batuhan Toker</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+  <!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+
+  <link href="/assets/portfolio.e087b0ae.css" rel="stylesheet">
+  <link href="/assets/portfolio.66907553.css" rel="stylesheet">
+  <link href="/assets/portfolio.84ba8e3e.css" rel="stylesheet">
+  <link href="/assets/portfolio.27296b5d.css" rel="stylesheet">
+  <link href="/assets/portfolio.e715669c.css" rel="stylesheet">
+  <link href="/assets/portfolio.872ce233.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+  <title>My Website</title>
+
+
+</head>
+<body>
+  <section id="projects" class="services custom-section" style="color: #526664">
+    <div class="container">
+        <div class="section-title">
+        </div>
+        </div>
+        <div class="content"></div>
+        <br>
+        <br> 
+        <h2 style="color: #4c514b">Most important projects:</h2> 
+        <h0 style="color: #4c514b">(To be updated with details and source codes.)</h0>   
+  
+        <ul>
+        <li style="color: #4c514b"> <b>PhD thesis</b> : A Control Framework for Multi-DoF Under-Actuated Prosthetic Hands based on Impedance Control </li>
+        <li style="color: #4c514b"> <b>MSc thesis</b> : A Novel Suspended-Load Backpack with Manually Adjustable Impedance to Reduce Metabolic Cost of Carrying Loads</li>
+        <li style="color: #4c514b"> <b>BSc thesis</b> : Linear Camera Slider based on a wing-mechanism</li>
+        </ul>
+      
+      
+      
+      <br>
+  
+      <div class="content">
+        <h2 style="color: #4c514b">List of my public GitHub repos</h2>
+        <h0 style="color: #4c514b">
+          You can access the source code(s) by clicking on the name of the project.
+          For a brief description on this page, please click on
+          <font color="#0B7400"><b>[+ More info]</b></font>. <br>
+          The projects are listed in alphabetical order.
+        </h0>
+        <ul id="repo-list"></ul>
+      
+        <script>fetch("https://api.github.com/users/batuhantoker/repos?page=1&per_page=1000").then((response)=>response.json()).then((data)=>{
+    const repoList = document.querySelector("#repo-list");
+    repoList.innerHTML = "";
+    data.forEach((repo)=>{
+        const li = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = repo.html_url;
+        link.textContent = repo.name;
+        link.style.color = "#4C514B";
+        link.target = "_blank";
+        li.appendChild(link);
+        li.appendChild(document.createTextNode(" "));
+        if (repo.description) {
+            const moreInfoLink = document.createElement("a");
+            moreInfoLink.href = "#";
+            moreInfoLink.style.marginLeft = "10px";
+            moreInfoLink.style.color = "green";
+            moreInfoLink.style.fontWeight = "bold";
+            moreInfoLink.textContent = "[+ More info]";
+            const description = document.createElement("p");
+            description.textContent = repo.description;
+            description.style.color = "#526664";
+            description.style.display = "none";
+            moreInfoLink.addEventListener("click", (event)=>{
+                event.preventDefault();
+                description.style.display = description.style.display === "none" ? "block" : "none";
+            });
+            li.appendChild(moreInfoLink);
+            li.appendChild(description);
+        }
+        repoList.appendChild(li);
+    });
+});
+
+</script>
+      </div>
+      
+    <br>
+
+    
+      
+
+  </section>
+
+
+  <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js" defer=""></script>
+  <script src="/assets/portfolio.62aadfa5.js" defer=""></script>
+  <script src="/assets/portfolio.a4d288aa.js" defer=""></script>
+  <script src="/assets/portfolio.a8b7bdb7.js" defer=""></script>
+  <script src="/assets/portfolio.84a0ba50.js" defer=""></script>
+  <script src="/assets/portfolio.5584ba33.js" defer=""></script>
+  <script src="/assets/portfolio.12407e68.js" defer=""></script>
+  <script src="/assets/portfolio.a1ffc644.js" defer=""></script>
+  <script src="/assets/portfolio.cf3b5bae.js" defer=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" defer=""></script>
+  <script src="/assets/portfolio.67881594.js" defer=""></script>
+</body>
+</html>
